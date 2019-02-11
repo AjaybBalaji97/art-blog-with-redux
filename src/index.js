@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import BlogHeader from './components/BlogHeader';
 //import BlogFooter from './components/BlogFooter';
-import PostContent from './components/PostContent';
+//import PostContent from './components/PostContent';
+import PostReaction from './components/PostReaction';
 import * as serviceWorker from './serviceWorker';
 
 const products={
@@ -15,7 +16,7 @@ const products={
     "liked": false,
     "image": "abstract.png"
 }
-ReactDOM.render(<PostContent product={products} />, document.getElementById('root'));
+ReactDOM.render(<PostReaction liked={false} claps={11} handleClapClick={''} handleLikeClick={''} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

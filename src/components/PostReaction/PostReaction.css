@@ -1,0 +1,13 @@
+.clap{
+    width:30px;
+    height:30px;
+}
+.heart{
+    float:right;
+    width:30px;
+    height:30px;
+}
+p{
+    display:inline;
+    size:18px;
+}
