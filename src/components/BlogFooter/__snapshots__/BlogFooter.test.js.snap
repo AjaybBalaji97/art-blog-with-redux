@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogHeader should render header 1`] = `
+<footer
+  className="footer"
+>
+  <p>
+    ©artifact.com 2019
+  </p>
+</footer>
+`;
