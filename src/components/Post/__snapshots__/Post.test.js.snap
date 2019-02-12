@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostContent should render Post contents 1`] = `
+<div
+  className="allPosts"
+>
+  <div
+    className="main"
+  >
+    <div
+      className="backgroundImage"
+      style={
+        Object {
+          "backgroundImage": "url(\\"./Images/abstract.png\\")",
+        }
+      }
+    />
+    <div
+      className="imageInfo"
+    >
+      <span>
+        2nd Januray, 2018
+      </span>
+      <span>
+        2 mins
+      </span>
+    </div>
+    <div
+      className="imageDesc"
+    >
+      <span>
+        The future of abstract art and the culture ...
+      </span>
+      <span
+        className="imageContent"
+      >
+        Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
+      </span>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="main"
+  >
+    <span>
+      <img
+        alt="clap"
+        className="clap"
+        onClick={[Function]}
+        src="./Icons/clapping.svg"
+      />
+      <p>
+        10
+      </p>
+      <img
+        alt="heart"
+        className="heart"
+        onClick={[Function]}
+        src="./Icons/heart-black.svg"
+      />
+    </span>
+  </div>
+</div>
+`;

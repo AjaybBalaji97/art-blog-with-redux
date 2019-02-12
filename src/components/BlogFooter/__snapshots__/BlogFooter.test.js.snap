@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BlogHeader should render header 1`] = `
+exports[`BlogHeader should render footer 1`] = `
 <footer
   className="footer"
 >

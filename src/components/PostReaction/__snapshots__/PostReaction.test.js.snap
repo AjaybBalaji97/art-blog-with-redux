@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostReaction should render header 1`] = `
+exports[`PostReaction should render clap and heart 1`] = `
 <div
   className="main"
 >
-  <img
-    alt="clap"
-    className="clap"
-    src="./Icons/clapping.svg"
-  />
-  <p />
-  <img
-    alt="heart"
-    className="heart"
-    src="./Icons/heart-black.svg"
-  />
+  <span>
+    <img
+      alt="clap"
+      className="clap"
+      src="./Icons/clapping.svg"
+    />
+    <p />
+    <img
+      alt="heart"
+      className="heart"
+      src="./Icons/heart-black.svg"
+    />
+  </span>
 </div>
 `;

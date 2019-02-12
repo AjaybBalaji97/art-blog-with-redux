@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from '.';
+import AllPosts from '.';
 import {shallow} from 'enzyme';
 
 
@@ -20,11 +20,11 @@ describe('PostContent',()=>{
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...",
         "claps": 10,
         "liked": false,
-        "image": "abstract.png"
+        "image": "abstract1.png"
     }]
     it('should render All Posts ',()=>{
         
-        const tree=renderer.create(<App posts={products} />).toJSON();
+        const tree=renderer.create(<AllPosts posts={products} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 

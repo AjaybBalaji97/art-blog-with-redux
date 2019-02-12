@@ -5,7 +5,7 @@ import {shallow} from 'enzyme';
 
 
 describe('BlogHeader',()=>{
-    it('should render header',()=>{
+    it('should render footer',()=>{
         const tree=renderer.create(<BlogFooter  />).toJSON();
         expect(tree).toMatchSnapshot();
     });

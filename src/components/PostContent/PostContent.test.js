@@ -5,7 +5,7 @@ import {shallow} from 'enzyme';
 
 
 describe('PostContent',()=>{
-    it('should render header',()=>{
+    it('should render post contents',()=>{
         const products={
             "date": "2nd Januray, 2018",
             "readingTime": "2 mins",

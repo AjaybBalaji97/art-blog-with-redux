@@ -1,13 +1,17 @@
+
 .clap{
     width:30px;
     height:30px;
+    margin:10px
+}
+p{
+    display: inline;
+    vertical-align: super;
+    font-size:15px;
 }
 .heart{
     float:right;
     width:30px;
     height:30px;
-}
-p{
-    display:inline;
-    size:18px;
+    margin:10px
 }

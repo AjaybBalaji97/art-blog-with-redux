@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "fsevents": "^1.2.7",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

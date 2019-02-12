@@ -11,12 +11,12 @@ class PostReaction extends Component {
   
       return (
         <div className="main" >
-            <img alt="clap" src={`./Icons/clapping.svg`} className='clap' onClick={this.props.handleClapClick}/>
+            <span><img alt="clap" src={`./Icons/clapping.svg`} className='clap' onClick={this.props.handleClapClick}/>
             <p>{this.props.claps}</p>
             {
               <img alt="heart" src={liked} className='heart' onClick={this.props.handleLikeClick} />
             }
-
+            </span>
         </div>
       );
     }
