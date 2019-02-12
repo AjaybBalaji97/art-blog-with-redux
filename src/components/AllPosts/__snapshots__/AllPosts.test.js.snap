@@ -40,7 +40,7 @@ exports[`PostContent should render All Posts  1`] = `
           Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
         </span>
       </div>
-      <hr />
+      <br />
     </div>
     <div
       className="main"
@@ -100,7 +100,7 @@ exports[`PostContent should render All Posts  1`] = `
           Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
         </span>
       </div>
-      <hr />
+      <br />
     </div>
     <div
       className="main"

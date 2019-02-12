@@ -17,7 +17,7 @@ class PostContent extends Component {
                     <span className="imageContent">{product.description}</span>
 
                 </div>
-                <hr />
+                <br/>
         </div>
       );
     }

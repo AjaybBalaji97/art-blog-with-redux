@@ -4,13 +4,13 @@ html{
 .artifactClass{
   font-size: 0.85rem;
   color: aliceblue;
-  padding-left:100px;
+  padding-left:50px;
 }
 .CultureClass{
   font-size: 0.5rem;
   font-style: italic;
   color: aliceblue;
-  padding-left:100px;
+  padding-left:50px;
 }
 .header {
     overflow: hidden;
