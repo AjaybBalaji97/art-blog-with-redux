@@ -1,20 +1,26 @@
 html{
   font-size:35px;
 }
+header{
+  display:flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  margin:0 auto;
+}
 .artifactClass{
   font-size: 0.85rem;
   color: aliceblue;
-  padding-left:50px;
 }
 .CultureClass{
   font-size: 0.5rem;
   font-style: italic;
   color: aliceblue;
-  padding-left:50px;
 }
 .header {
-    overflow: hidden;
     background-color: black;
+    width:80%;
+    margin:0 auto;
   }
   
   /* Style the header links */
@@ -49,5 +55,22 @@ html{
   
   /* Float the link section to the right */
   .header-right {
-    float: right;
+    display:flex;
+    justify-content: flex-end;
+  }
+  @media screen and (max-width: 500px) {
+    .header a {
+      display:flex;
+      flex-direction: column;
+      background-color: black;
+      justify-content: center;
+      margin:0 auto;
+    }
+    
+    .header-right a {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin:0;
+    }
   }
