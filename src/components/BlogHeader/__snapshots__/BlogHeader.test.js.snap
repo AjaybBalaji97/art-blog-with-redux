@@ -1,38 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlogHeader should render header 1`] = `
-<div
-  className="header"
->
-  <span
-    className="artifactClass"
-  >
-    The Artifact
-  </span>
-  <br />
-  <span
-    className="CultureClass"
-  >
-    Culture & Art blog
-  </span>
+<header>
   <div
-    className="header-right"
+    className="header"
   >
-    <a
-      href=""
+    <div
+      className="header-left"
     >
-      Blog
-    </a>
-    <a
-      href=""
+      <span
+        className="artifactClass"
+      >
+        The Artifact
+      </span>
+      <br />
+      <span
+        className="CultureClass"
+      >
+        Culture & Art blog
+      </span>
+    </div>
+    <div
+      className="header-right"
     >
-      About
-    </a>
-    <a
-      href=""
-    >
-      Contact
-    </a>
+      <a
+        href=""
+      >
+        Blog
+      </a>
+      <a
+        href=""
+      >
+        About
+      </a>
+      <a
+        href=""
+      >
+        Contact
+      </a>
+    </div>
   </div>
-</div>
+</header>
 `;

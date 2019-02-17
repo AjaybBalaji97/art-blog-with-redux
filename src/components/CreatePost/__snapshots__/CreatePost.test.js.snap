@@ -6,6 +6,7 @@ exports[`PostContent should render CreatePost button 1`] = `
 >
   <button
     className="button"
+    onClick={[Function]}
   >
     CreatePost
   </button>

@@ -4,12 +4,11 @@
     height:30px;
     margin:10px
 }
-.claps{
-    font-size: 16px;
-    margin-top: 0;
-    vertical-align: 18px;
+p{
+    display: inline;
+    vertical-align: super;
+    font-size:15px;
 }
-
 .heart{
     float:right;
     width:30px;

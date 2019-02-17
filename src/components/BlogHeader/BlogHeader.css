@@ -59,17 +59,23 @@ header{
     justify-content: flex-end;
   }
   @media screen and (max-width: 500px) {
-    .header a {
-      display:flex;
-      flex-direction: column;
+    .header{
       background-color: black;
+      width:100%;
+    }
+    .header a {
+      float:none;
+      display:none;
+      flex-direction: row;
+      background-color: black;
+      width:100%;
       justify-content: center;
       margin:0 auto;
-    }
+    } 
     
     .header-right a {
-      display: flex;
-      flex-direction: column;
+      display: none;
+      flex-direction: row;
       justify-content: flex-end;
       margin:0;
     }

@@ -3,15 +3,21 @@ import Post from '../Post';
 import './AllPosts.css';
 class AllPost extends Component {
     
-      
+      handleClapClick=(index)=>{
+        this.props.onClapClick(index);
+      }
+      handleLikeClick=(index)=>{
+        this.props.onHeartClick(index);
+      }
     render() {
         //const posts = this.props.posts;
-
+        console.log(this.props.blogs);
       return (
+
           <div className="allPostsMain">
             {
-            this.props.posts.map((post,index)=>{
-                 return <Post product={post} key={post.date+post.image+index}></Post>
+            this.props.blogs.map((post,index)=>{
+                 return <Post blog={post} key={post.date+post.image+index} onClapClick={()=>this.handleClapClick(index)} onLikeClick={()=>this.handleLikeClick(index)} ></Post>
             })
             }
             

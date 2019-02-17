@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostContent should render CreatePost button 1`] = `
+exports[`CreatePostForm should render CreatePostForm  1`] = `
 <div
   className="PostForm"
 >
@@ -10,53 +10,60 @@ exports[`PostContent should render CreatePost button 1`] = `
   <form>
     <p>
        
-      <label
-        for="title"
-      >
+      <label>
         TITLE:
       </label>
       <textarea
         id="title"
+        onChange={[Function]}
         type="text"
+        value=""
       />
     </p>
     <p>
-      <label
-        for="desc"
-      >
+       
+      <label>
         DESCRIPTION
       </label>
       <textarea
-        id="desc"
+        id="description"
+        onChange={[Function]}
         type="text"
+        value=""
       />
     </p>
     <p>
-      <label
-        for="date"
-      >
+       
+      <label>
         Date
       </label>
       <input
         id="date"
+        onChange={[Function]}
         type="date"
+        value=""
       />
     </p>
     <p>
-      <label
-        for="image"
-      >
+       
+      <label>
         IMAGE
       </label>
       <input
-        id="image"
+        id="imageFile"
+        onChange={[Function]}
         type="file"
+        value=""
       />
     </p>
     <p>
-      <input
-        type="submit"
-      />
+      <button
+        className="submit"
+        onClick={[Function]}
+        type="button"
+      >
+        Submit
+      </button>
     </p>
   </form>
 </div>

@@ -5,26 +5,30 @@ import './Post.css';
 class Post extends Component {
     
       state={
-          liked:this.props.product.liked,
-          claps:this.props.product.claps,
+          liked:this.props.blog.liked,
+          claps:this.props.blog.claps,
       }
-      handleLikeClick=()=>{
-        this.setState({
-            liked: this.state.liked?false:true
-          });
-      }
-      handleClapClick=()=>{
-        this.setState({
-            claps:this.state.claps+1
-          });
-      }
+      // handleLikeClick=(index)=>{
+      //   // this.setState({
+      //   //     liked: this.state.liked?false:true
+      //   //   });
+      //   this.props.onHeartClick();
+      // }
+      // handleClapClick=(index)=>{
+      //   // this.setState({
+      //   //     claps:this.state.claps+1
+      //   //   });
+      //   this.props.onClapClick();
+      // }
+      
     render() {
-        const product = this.props.product;
+      //console.log('-----',this.props.product);
+        const product = this.props.blog;
 
       return (
           <div className="allPosts">
             <PostContent product={product}/>
-            <PostReaction liked={this.state.liked} claps={this.state.claps} handleLikeClick={this.handleLikeClick} handleClapClick={this.handleClapClick}/>
+            <PostReaction liked={this.props.blog.liked} claps={this.props.blog.claps} onLikeClick={this.props.onLikeClick} onClapClick={this.props.onClapClick}/>
             
           </div>
       );

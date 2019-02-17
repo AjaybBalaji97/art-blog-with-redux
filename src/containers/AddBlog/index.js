@@ -1,51 +1,31 @@
-import React, { Component } from 'react';
+import React,{Component} from 'react';
+import { connect } from 'react-redux';
+import { addBlog } from '../../redux/actions';
 import './CreatePostForm.css';
 import axios from 'axios';
 
 
-class CreatePostForm extends Component {
+export class CreatePostForm extends Component {
   state={
     title:'',
     description:'',
     date:'',
-    imageFile:'',
-    loading:false,
-    status:0
+    image:'abstract.png',
+    readingTime:'2 mins',
+    liked:false,
+    claps:0
   }
   handleDataChange=(event)=>{
     this.setState({
       [event.target.id]:event.target.value,
     })
   }
-  handlePostData=async (event)=>{
+  handlePostData= (event)=>{
     event.preventDefault();
-    const title=this.state.title;
-    const description=this.state.description;
-    const date=this.state.date;
-    const imageFile=this.state.imageFile
-    this.setState({
-      loading:true,
-    })
-    const data={
-      title,
-      description,
-      date,
-      imageFile
-    }
-    return await  axios.post('/blog',data).then(response=>{
-      console.log(response);
-      this.setState({
-        loading:false,
-        status:response
-      })
-      //return response
-    }).catch(error=>{
-      console.log(error);
-      this.setState({
-        loading:false,
-      })
-      //return error
-    })
+    console.log(this.state);
+    this.props.dispatch(addBlog(this.state))
+    this.props.history.push('/home');
+    
   }
   render() {
     return (
@@ -62,7 +42,7 @@ class CreatePostForm extends Component {
                 <input id="date" type="date" value={this.state.date} onChange={this.handleDataChange}/>
             </p>
             <p> <label >IMAGE</label>
-                <input id="imageFile" type="file" value={this.state.imageFile} onChange={this.handleDataChange}/>
+                <input id="imageFile" type="text" value={this.state.image} onChange={this.handleDataChange}/>
             </p>
             <p>
                 {/* <button type="button" onClick={()=>{
@@ -78,4 +58,18 @@ class CreatePostForm extends Component {
   }
 }
 
-export default CreatePostForm;
+// const mapStateToProps = state => {
+//   console.log(state);
+//     return {
+//       counter:state.
+//     }
+//   }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+      addBlog:(state)=>{dispatch(addBlog(state))},
+      
+    }
+  }
+
+export default connect(mapDispatchToProps)(CreatePostForm)
